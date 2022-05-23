@@ -1,13 +1,14 @@
 package sae;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author tilio
  */
 public class Sommet {
-    private ArrayList adjacent;
+    private List<Adjacent> listAdjacent;
     private final String typeDeSommet;
     
     public Sommet (String typeDeSommet){
@@ -18,7 +19,7 @@ public class Sommet {
         return typeDeSommet;
     }
     
-    public ArrayList getAdj(){
-        return adjacent;
+    public List getAdj(){
+        return listAdjacent;
     }
 }
